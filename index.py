@@ -1,25 +1,23 @@
 import time
-import simpleaudio as sa
 import random
+import winsound
 
 
-
-def play_fart_noise():
-    # give path to file
-    soundFile = sa.WaveObject.from_wave_file("reverbFart.wav")
-    # play fart sound, 
-    # wait for it to finish
-    # before exiting
-    soundFile.play().wait_done()
+# function to play
+# any sfx
+def play_sound(soundFile):
+    winsound.PlaySound(soundFile, winsound.SND_FILENAME)
+    time.sleep(5)
 
 # while loop to 
 # keep farting
-gassy = True 
+gassy = True
 while gassy:
-    play_fart_noise()
+    play_sound("reverbFart.wav")
+    # play_fart_noise()
     # choose an amount
-    # from 5-10 min
-    extraMinutes = random.randint(300, 600)
+    # from 0-10 min
+    extraMinutes = random.randint(0, 600)
     # wait 15 minutes
-    # plus 5-10 extra
+    # plus 0-10 extra
     time.sleep(900 + extraMinutes)
