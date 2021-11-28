@@ -8,3 +8,7 @@
 This is intended as a gag. It personally has scared me and given me a good laugh, and I want to share that.
 
 **I condemn using this for anything beyond good-natured humor in the strongest possible terms.**
+
+_That being said:_
+To download, simply download the entire "~downloadable_version~" folder. It has all the dependencies you'll need. 
+Remember you can close this file with task manager. Enjoy!
